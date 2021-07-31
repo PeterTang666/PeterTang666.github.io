@@ -1,0 +1,51 @@
+body {
+	background-color: darkblue;
+	color: white;
+	
+	/* 下面这个图片有点亮眼，如果喜欢，可以取消注释。后来发现，算了，每个网页背景都不一样 */
+	/* background:url(../img/C1.jpg) left top/cover; */
+}
+
+ul {
+	list-style: none;
+	font-size: 0;
+
+}
+
+li {
+	width: 300px;
+	height: 50px;
+	line-height: 30px;
+	border: 20px;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	border-right: 0;
+}
+
+.current {
+	border-top: 2px solid brown;
+}
+
+/* 伪类选择器 */
+/* 1,hover, :active必须置于:visited和link之后
+2, :active必须置于:hover之后 */
+/* 未访问过的链接 */
+a:link {
+	color: white;
+}
+
+/* 已访问过的链接 */
+a:visited {
+	color: white;
+}
+
+/* 鼠标移入的状态 */
+a:hover {
+	color: red;
+}
+
+/* 鼠标正在点击的状态 */
+a:active {
+	color: blue;
+}
